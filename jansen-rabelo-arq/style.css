@@ -1,0 +1,57 @@
+@charset "UTF-8";
+body {
+    background-color: #464646;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+    color: black;    
+    padding: 10px;
+}
+
+nav {
+    background-color: rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: red;
+        margin-inline: 20px;
+    }
+
+    .link:visited {
+        color: darkred;
+    }
+
+    .link:hover {
+        color:red;
+        text-decoration: underline;
+    }
+
+div.card {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2px;
+    margin-top: 5px;
+    color: #464646;
+}
+
+.card:hover {
+    background-color: #fdcbcb;
+}
+
+div#notes {
+    text-align: left;
+}
