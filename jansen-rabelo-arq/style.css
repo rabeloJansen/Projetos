@@ -26,14 +26,11 @@ header {
             font-weight: bold;
             text-decoration: none;
             color:#da0101;
-            margin-inline: 1em;
+            margin-inline: 0.7em;
         }
 
         a.menu {
-            font-weight: bold;
-            text-decoration: none;
             color: #404040;
-            margin-inline: 1em;
         }
 
         .menu:hover {
