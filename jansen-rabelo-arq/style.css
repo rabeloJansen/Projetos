@@ -1,41 +1,57 @@
 @charset "UTF-8";
 body {
-    background-color: #464646;
+    background-image: url('package/images/background1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    margin: 0px;
 }
 
 header {
     background-color: white;
-    color: black;    
+    box-shadow: 0px 10px 20px #000000;
+    color: #404040;  
     padding: 10px;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
-nav {
-    background-color: rgb(218, 218, 218);
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
+    nav {
+        text-align: right;
+    }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color:#da0101;
+            margin-inline: 1em;
+        }
+
+        a.menu {
+            font-weight: bold;
+            text-decoration: none;
+            color: #404040;
+            margin-inline: 1em;
+        }
+
+        .menu:hover {
+            color:#da0101;
+        }
+
+        .link:visited {
+            color:#920000;
+        }
+
+        .link:hover {
+            color:red;
+            text-decoration: underline;
+        }
+
+main {
+    height: 100vh;
 }
-
-    a {
-        font-weight: bold;
-        text-decoration: none;
-        color: red;
-        margin-inline: 1em;
-    }
-
-    .link:visited {
-        color: darkred;
-    }
-
-    .link:hover {
-        color:red;
-        text-decoration: underline;
-    }
 
 div.card {
     display: inline-block;
@@ -49,10 +65,17 @@ div.card {
     color: #464646;
 }
 
-.card:hover {
-    background-color: #fdcbcb;
-}
+    .card:hover {
+        background-color: #d8d8d8;
+    }
 
-div#notes {
-    text-align: left;
+    div#notes {
+        text-align: left;
+    }
+
+footer {
+    background-color: white;
+    color: #404040;    
+    padding: 5px;
+    font-size: 0.8em;
 }
