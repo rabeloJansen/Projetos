@@ -1,78 +1,150 @@
 @charset "UTF-8";
+:root {
+    --text-all: #404040;
+    --text-draft: #920000;
+    --text-link: #da0101;
+    --background: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url('package/images/background1.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0px;
+    background-attachment: fixed;
+    height: 100vh;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
 header {
-    background-color: white;
+    justify-content: space-between;
+    background-color: var(--background);
     box-shadow: 0px 10px 20px #000000;
-    color: #404040;  
+    color: var(--text-all);
+    text-align: left;
     padding: 10px;
+    margin-bottom: 1em;
     font-size: 1em;
 }
 
-    nav {
-        text-align: right;
+    div.logo {
+        display: inline-block;
+        font-family: "Chivo Mono", monospace;
+        font-weight: bold;
+        margin-left: 3em;
     }
 
-        a {
-            font-weight: bold;
+        .logoup {
             text-decoration: none;
-            color:#da0101;
-            margin-inline: 0.7em;
+            font-size: 3em;
+            color: var(--text-all)
         }
 
-        a.menu {
-            color: #404040;
+        .logodown {
+            display: flex;
+            justify-content: right;
+            text-decoration: none;
+            font-size: 1em;
+            color: var(--text-draft)
         }
 
-        .menu:hover {
-            color:#da0101;
+    ul.menu {
+        font-family: "Chivo Mono", monospace;
+        display: flex;
+        justify-content: right;
+        gap: 1em;
+        margin-right: 3em;
+    }
+
+        ul.menu li {
+            list-style: none;
         }
 
-        .link:visited {
-            color:#920000;
+        ul.menu li a {
+            display: block;
+            padding: 1em;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--text-all);
+            transition: 0.5s ease;
         }
 
-        .link:hover {
-            color:red;
-            text-decoration: underline;
+        ul.menu:hover li a{
+            color: var(--text-draft)
+        }
+
+        ul.menu:hover li a:not(:hover) {
+            color: var(--text-all);
+            opacity: 0.5;
+            filter: blur(1px);
         }
 
 main {
-    height: 100vh;
+    flex: 1 0 auto;
+    width: min(100% - 2em, 80em);
+    margin-inline: auto;
 }
 
-div.card {
-    display: inline-block;
-    background-color: #ffffff;
-    width: 180px;
-    height: 180px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 2px;
-    margin-top: 5px;
-    color: #464646;
+    .link {
+        font-weight: bold;
+        text-decoration: none;
+        color:var(--text-link);
+        margin-inline: 1em;
+    }
+
+    .link:visited {
+        color:var(--text-draft);
+    }
+
+    .link:hover {
+        color:var(--text-link);
+        text-decoration: underline;
+    }
+
+.galeri {
+    display: flex;
+    height: 20em;
+    gap: 1em;
 }
 
-    .card:hover {
-        background-color: #d8d8d8;
+    .card {
+        background-image: url('package/images/about1.jpg');
+    }
+    
+    .galeri > div {
+        flex: 1;
+        border-radius: 1em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover 100%;
+        transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
     }
 
-    div#notes {
-        text-align: left;
+    .galeri > div:hover {
+        flex: 3;
     }
+
+div.notes {
+    text-align: left;
+}
 
 footer {
-    background-color: white;
-    color: #404040;    
-    padding: 5px;
-    font-size: 0.8em;
+    flex-shrink: 0;
+    background-color: var(--background);
+    box-shadow: 0px -10px 20px #000000;
+    color: var(--text-all);    
+    padding: 1em;
+    font-size: 1em;
+    margin-top: 1em;
 }
