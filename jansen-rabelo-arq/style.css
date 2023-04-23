@@ -3,8 +3,12 @@
     --text-main: #404040;
     --text-draft: #00ffff;
     --text-link: #da0101;
+    --text-card: #ffffff;
     --text-other: #ffffff;
+    --font-main: Arial, Helvetica, sans-serif;
+    --font-draft: "Chivo Mono", monospace;
     --background: #ffffff;
+    --background-other: #4040408a;
 }
 
 * {
@@ -20,8 +24,8 @@ html, body {
     background-size: cover;
     height: 100vh;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-other)
+    font-family: var(--font-main);
+    color: var(--text-other);
 }
 
 header {
@@ -32,12 +36,12 @@ header {
     text-align: left;
     padding: 10px;
     margin-bottom: 1em;
-    font-size: 1.0vw;
+    font-size: 1em;
 }
 
     div.logo {
         display: inline-block;
-        font-family: "Chivo Mono", monospace;
+        font-family: var(--font-draft);
         font-weight: bold;
         margin-left: 1em;
         margin-top: 0.5em;
@@ -58,7 +62,7 @@ header {
         }
 
     ul.menu {
-        font-family: "Chivo Mono", monospace;
+        font-family: var(--font-draft);
         display: flex;
         justify-content: right;
         gap: 1em;
@@ -97,15 +101,8 @@ main {
     padding: 2em;
 }
 
-    ul.link {
-        font-family: "Chivo Mono", monospace;
-        display: flex;
-        justify-content: center;
-        gap: 0.5em;
-    }
-
-    ul.download {
-        font-family: "Chivo Mono", monospace;
+    ul.link, ul.download {
+        font-family: var(--font-draft);
     }
 
         ul.link li, ul.download li {
@@ -137,45 +134,65 @@ main {
             filter: blur(1px);
         }
 
-.galeri {
-    display: flex;
-    height: 20em;
-    gap: 1em;
-}
-
-    .card {
-        background-image: url('package/images/about1.jpg');
-    }
-    
-    .galeri > div {
-        flex: 1;
-        border-radius: 1em;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover 100%;
-        transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+    .gallery {
+        display: flex;
+        height: 20em;
+        gap: 1em;
     }
 
-    .galeri > div:hover {
-        flex: 3;
-    }
-
-    .secon {
-        background: var(--background);
-        box-shadow: 0px 0px 20px #000000;
-        padding: 1em;
-    }
-
-        .secon > p {
-            color: var(--text-main);
-            margin-left: 10vw;
-            margin-right: 10vw;
+        .card {
+            position: relative;
+            background-image: url('package/images/about1.jpg');
         }
 
-    .secoff {
-        margin-left: 10vh;
-        margin-right: 10vh;
+            .card > p {
+                position: absolute;
+                font: bold 2em var(--font-draft);
+                color: var(--text-card);             
+                left: 20px;
+                bottom: -5px;
+                transform-origin: left;
+                transform: rotate(-90deg);            
+            }
+        
+        .gallery > div {
+            flex: 1;
+            border-radius: 1em;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+        }
+
+        .gallery > div:hover {
+            flex: 3;
+        }
+
+    article {
+        padding: 1.4em;
     }
+
+        article > p {
+            font-size: 1.4em;
+            margin-left: 20vw;
+            margin-right: 20vw;
+        }
+
+        .secon {
+            background: var(--background);
+            box-shadow: 0px 0px 20px #000000;
+        }
+
+            .secon > p {
+                color: var(--text-main);
+
+            }
+
+        .secoff {
+            background-color: #000000bd;
+            margin-top: -17px;
+            margin-bottom: -17px;
+        }
 
     div.notes {
         text-align: left;
