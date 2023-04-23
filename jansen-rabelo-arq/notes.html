@@ -27,6 +27,7 @@
             <div class="notes">
                 <h1>Hierarquia dos títulos HTML</h2>
                 <h2>Grouping Tags e Semantic Tags</h2>
+                    <br>
                     <ul>
                         <li>Header</li>
                             <p>Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos e subtítulos. Podem também conter menus de navegação.</p>
@@ -44,6 +45,7 @@
                             <p>Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um ASIDE), mas possui informações sobre autoria do conteúdo, links adicionais, mapa do site, documentos relacionados.</p>
                             <p>A seguir, vou criar uma proposta de estrutura para um projeto de site. Não tome ela como a única possibilidade de criar o posicionamento de elementos de agrupamento semântico.</p>
                     </ul>
+                    <br>
                 <h2>Principais formatações:</h2>
                     <h3>Negrito e destaque</h3>
                         <p>Nesse exemplo temos <abbr title="<b>NEGRITO</b>"><b>NEGRITO</b></abbr></p>
@@ -70,12 +72,12 @@
                         <p>Exemplo de código completo:</p>
                         <pre>
                             <code>
-                    num = int(input('Digite um número'))
-                    if num % 2 == 0
-                        print('O número {num} é PAR')
-                    else:
-                        print('O número {num} é ÍMPAR')
-                    print('Fim do programa')
+    num = int(input('Digite um número'))
+    if num % 2 == 0
+        print('O número {num} é PAR')
+    else:
+        print('O número {num} é ÍMPAR')
+    print('Fim do programa')
                             </code>
                         </pre>
                 <h2>Listas:</h2>
@@ -113,12 +115,12 @@
                         <p>Código HTML:</p>
                         <pre>
                             <code>
-                    &ltaudio src="audio.mp3" controls autoplay&gt&lt/audio&gt
-                        ou
-            
-                    &ltaudio preload="metadata" autoplay controls&gt
-                        &ltsource src="audio.mp3" type="audio/mpeg"&gt
-                    &lt/audio&gt
+    &ltaudio src="audio.mp3" controls autoplay&gt&lt/audio&gt
+        ou
+
+    &ltaudio preload="metadata" autoplay controls&gt
+        &ltsource src="audio.mp3" type="audio/mpeg"&gt
+    &lt/audio&gt
                             </code>
                         </pre>
                     <h3>Vídeos</h3>
@@ -126,12 +128,12 @@
                             <p>Código HTML:</p>
                             <pre>
                                 <code>
-                    &ltvideo src="video.mp4"&gt&lt/video&gt
-                        ou
-            
-                    &ltvideo width="500" poster="thumbnail.png" controls&gt
-                        &ltsource src="video.mp4" type="video/mp4&gt"
-                    &lt/video&gt
+    &ltvideo src="video.mp4"&gt&lt/video&gt
+        ou
+
+    &ltvideo width="500" poster="thumbnail.png" controls&gt
+        &ltsource src="video.mp4" type="video/mp4&gt"
+    &lt/video&gt
                                 </code>
                             </pre>
                         <h4>Servidor externo (Recomendado)</h4>
@@ -140,37 +142,37 @@
                 <h2></h2>
                 <h2>Observações:</h2>
                 <pre>
-                Ordem dos títulos:
-                    &lth1&gt
-                    &lth2&gt
-                    ...
-                    &lth6&gt
-                Para EMOJIS:
-                    $#x seguido do código
-                Para link de endereço:
-                    &ltadress&gt
-            
-                Tipos de REL:
-                    prev (Pagina primeiramente anterior)
-                    next (Pagina seguinte)
-                    external (Link externo com ligação)
-                    nofollow (Link externo sem ligação)
-            
-                Para voltar páginas em pastas:
-                    Exemplo: href="../home.html"
-                Formatos de áudio:
-                    .mp3
-                    .WAV
-                    .OGG
-                Formatos de vídeo:
-                    .mp4 / m4v
-                    .webm
-                    .ogv
-                Em SOURCE de áudio e vídeo:
-                    O navegador tenta executar cada SOURCE de mídia na órdem dos códigos.
-                Atalhos:
-                    CTRL + Shift P para atalho
-                    CTRL + Espaço para puxar link interno
+    Ordem dos títulos:
+        &lth1&gt
+        &lth2&gt
+        ...
+        &lth6&gt
+    Para EMOJIS:
+        $#x seguido do código
+    Para link de endereço:
+        &ltadress&gt
+
+    Tipos de REL:
+        prev (Pagina primeiramente anterior)
+        next (Pagina seguinte)
+        external (Link externo com ligação)
+        nofollow (Link externo sem ligação)
+
+    Para voltar páginas em pastas:
+        Exemplo: href="../home.html"
+    Formatos de áudio:
+        .mp3
+        .WAV
+        .OGG
+    Formatos de vídeo:
+        .mp4 / m4v
+        .webm
+        .ogv
+    Em SOURCE de áudio e vídeo:
+        O navegador tenta executar cada SOURCE de mídia na órdem dos códigos.
+    Atalhos:
+        CTRL + Shift P para atalho
+        CTRL + Espaço para puxar link interno
                 </pre>
                 <h1>CSS</h1>
                     <h2>Cores em CSS</h2>
@@ -200,20 +202,22 @@
                                 <li>Porcentagem da Viewport (vw)</li>
                                 <li>Altura da Viewport (vh)</li>
                             </ul>
-                        <h3>Declarar por 'shorthand font'</h3>
+                        <h3>Shorthand - Font</h3>
                             <pre>
-                font-family: 'Work Sans', sans-serif;
-                font-weight: bolder;
-                font-size: 3em;
-                font-style: italic;
-                    ou
-            
-                font: italic bolder 3em 'Work Sans', sans-serif;
-                    Ordem das declarações:
-                    font-style
-                    font-weight
-                    font-size
-                    font-family
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+        ou
+
+    font: italic bolder 3em 'Work Sans', sans-serif;
+    Ordem das declarações:
+        font-style > font-weight > font-size > font-family
+                            </pre>
+                        <h3>Shorthand - Background</h3>
+                            <pre>
+    Ordem das declarações:
+        color > image > position > repeat > *size* > attachment                        
                             </pre>
                     <h2>Quando usar ID ou Class em CSS</h2>
                         <p>ID ou # usamos apenas em um elemento por documento, enquanto o class ou . podemos usar em vários elementos no mesmo documento.</p>
