@@ -61,38 +61,53 @@ header {
             color: var(--text-draft)
         }
 
-    ul.menu {
-        font-family: var(--font-draft);
+    nav {
         display: flex;
         justify-content: right;
-        gap: 1em;
-        margin-right: 1em;
+        align-items: center;
     }
 
-        ul.menu li {
-            list-style: none;
-        }
-
-        ul.menu li a {
+        i#hamburger {
             display: block;
-            padding: 1em;
-            text-decoration: none;
-            font-size: 1em;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: var(--text-main);
-            transition: 0.5s ease;
+            cursor: pointer;
         }
 
-        ul.menu:hover li a{
-            color: var(--text-draft)
+            i#hamburger:hover {
+                color: var(--text-draft);
+            }
+
+        ul.menu {
+            font-family: var(--font-draft);
+            display: flex;
+            justify-content: right;
+            gap: 1em;
+            margin-right: 1em;
         }
 
-        ul.menu:hover li a:not(:hover) {
-            color: var(--text-main);
-            opacity: 0.5;
-            filter: blur(1px);
-        }
+            ul.menu li {
+                list-style: none;
+            }
+
+            ul.menu li a {
+                display: block;
+                padding: 1em;
+                text-decoration: none;
+                font-size: 1em;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: var(--text-main);
+                transition: 0.5s ease;
+            }
+
+            ul.menu:hover li a{
+                color: var(--text-draft)
+            }
+
+            ul.menu:hover li a:not(:hover) {
+                color: var(--text-main);
+                opacity: 0.5;
+                filter: blur(1px);
+            }
 
 main {
     flex: 1 0 auto;
