@@ -104,11 +104,15 @@ main {
         gap: 0.5em;
     }
 
-        ul.link li {
+    ul.download {
+        font-family: "Chivo Mono", monospace;
+    }
+
+        ul.link li, ul.download li {
             list-style: none;
         }
 
-        ul.link li a {
+        ul.link li a, ul.download li a {
             display: block;
             padding: 1em;
             text-decoration: none;
@@ -119,11 +123,15 @@ main {
             transition: 0.5s ease;
         }
 
-        ul.link:hover li a{
+            ul.download li a {
+                padding: 0em;
+            }
+
+        ul.link:hover li a, ul.download li a {
             color: var(--text-draft)
         }
 
-        ul.link:hover li a:not(:hover) {
+        ul.link:hover li a:not(:hover), ul.download:hover li a:not(:hover) {
             color: var(--text-link);
             opacity: 0.5;
             filter: blur(1px);
@@ -152,9 +160,22 @@ main {
         flex: 3;
     }
 
-div.notes {
-    text-align: left;
-}
+    .secon {
+        background: var(--background);
+        box-shadow: 0px 0px 20px #000000;
+    }
+
+        .secon > p {
+            color: var(--text-main);
+        }
+
+    .secoff {
+
+    }
+
+    div.notes {
+        text-align: left;
+    }
 
 footer {
     flex-shrink: 0;
