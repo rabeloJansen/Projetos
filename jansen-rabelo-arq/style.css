@@ -189,8 +189,9 @@ main {
 
         article > p {
             font-size: 1.4em;
-            margin-left: 20vw;
-            margin-right: 20vw;
+            flex: 1 0 auto;
+            width: min(70% - 2em, 80em);
+            margin-inline: auto;
         }
 
         .secon {
@@ -204,7 +205,7 @@ main {
             }
 
         .secoff {
-            background-color: #000000bd;
+            background-color: #0000008b;
             margin-top: -17px;
             margin-bottom: -17px;
         }
