@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="package/icon/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
         <title>Anotações</title>
     </head>
     <body> 
@@ -15,12 +16,15 @@
                 <a class="logodown" href="home.html">Arq{Dev}</a>
             </div>
                 <nav>
-                    <ul class="menu">
+                    <ul class="menu" id="menu">
                         <li><a class="menu" href="home.html">HOME</a></li>
                         <li><a class="menu" href="about.html" rel="next">SOBRE MIM</a></li>
                         <li><a class="menu" href="notes.html" rel="next">ANOTAÇÕES</a></li>
                         <li><a class="menu" href="contact.html" rel="next">FALE COMIGO</a></li>
                     </ul>
+                    <span id="burger" class="material-symbols-outlined" onclick="clickmenu()">
+                        menu
+                    </span>
                 </nav>
         </header>
         <main>
@@ -275,4 +279,6 @@
                 <br>
             <p>&copy; Jansen Rabelo Arq{Dev}</p>
         </footer>
+        <script src="burgermenu.js"></script>
     </body>
+</html>

@@ -67,18 +67,18 @@ header {
         align-items: center;
     }
 
-        i#hamburger {
+        span#burger {
             display: block;
             cursor: pointer;
         }
 
-            i#hamburger:hover {
+            span#burger:hover {
                 color: var(--text-draft);
             }
 
         ul.menu {
             font-family: var(--font-draft);
-            display: flex;
+            display: none; /*flex;*/
             justify-content: right;
             gap: 1em;
             margin-right: 1em;
@@ -136,10 +136,10 @@ main {
         }
 
             ul.download li a {
-                padding: 0em;
+                padding: 0.2em;
             }
 
-        ul.link:hover li a, ul.download li a {
+        ul.link:hover li a, ul.download:hover li a {
             color: var(--text-draft)
         }
 
@@ -208,6 +208,14 @@ main {
             background-color: #0000008b;
             margin-top: -17px;
             margin-bottom: -17px;
+        }
+
+    div.picture {
+        padding: 2em;
+    }
+
+        .img {
+            border-radius: 1em;
         }
 
     div.notes {
