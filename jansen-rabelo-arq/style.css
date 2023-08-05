@@ -32,9 +32,6 @@ html, body {
 
     body#homebody, body#aboutbody {
         background: var(--background-blue);
-    }
-
-    body#homebody {
         height: 200em;
     }
 
@@ -88,7 +85,6 @@ header {
 
         ul.menu {
             font-family: var(--font-draft);
-            display: none; /*flex;*/
             justify-content: right;
             gap: 1em;
             margin-right: 1em;
@@ -126,39 +122,6 @@ main {
     padding: 2em;
 }
 
-    ul.link, ul.download {
-        font-family: var(--font-draft);
-    }
-
-        ul.link li, ul.download li {
-            list-style: none;
-        }
-
-        ul.link li a, ul.download li a {
-            display: block;
-            padding: 0.5em;
-            text-decoration: none;
-            font-size: 1em;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: var(--text-link);
-            transition: 0.5s ease;
-        }
-
-            ul.download li a {
-                padding: 0.2em;
-            }
-
-        ul.link:hover li a, ul.download:hover li a {
-            color: var(--text-draft)
-        }
-
-        ul.link:hover li a:not(:hover), ul.download:hover li a:not(:hover) {
-            color: var(--text-link);
-            opacity: 0.5;
-            filter: blur(1px);
-        }
-
     .welcome {
         text-align: left;
         padding: 1em;
@@ -175,11 +138,6 @@ main {
             background-size: contain;
         }
 
-            #twobar {
-                display: grid;
-                grid-gap: 1rem;
-            }
-
         div#knowmore {
             width: 8em;
             height: 2.5em;
@@ -190,13 +148,42 @@ main {
             justify-content: center;
         }
 
-         div > a {
+        div.welcome > a {
             color: var(--text-card);
             font-family: var(--font-draft);
             font-size: 1em;
             font-weight: bold;
             text-decoration: none;           
-         }
+        }
+
+    article {
+        padding: 1.4em;
+    }
+
+        div.resume > p {
+            width: min(70% - 2em, 80em);
+            margin-inline: auto;
+            flex: 1 0 auto;
+            font-size: 1.4em;
+            text-align: left;
+        }
+
+            .secon {
+                background: var(--background-white);
+                box-shadow: 0px 0px 20px #000000;
+                color: var(--text-main);
+            }
+
+                .secoff > p{
+                    color: var(--text-other);
+                    margin-top: -17px;
+                    margin-bottom: -17px;
+                }
+
+    #twobar {
+        display: grid;
+        grid-gap: 1rem;
+    }
 
     .gallery {
         display: flex;
@@ -248,43 +235,41 @@ main {
             flex: 3;
         }
 
-    article {
-        padding: 1.4em;
+div.notes {
+    text-align: left;
+}
+
+ul.link, ul.download {
+    font-family: var(--font-draft);
+}
+
+    ul.link li, ul.download li {
+        list-style: none;
     }
 
-        article > p {
-            font-size: 1.4em;
-            flex: 1 0 auto;
-            width: min(70% - 2em, 80em);
-            margin-inline: auto;
-        }
-
-        .secon {
-            background: var(--background-white);
-            box-shadow: 0px 0px 20px #000000;
-        }
-
-            .secon > p {
-                color: var(--text-main);
-
-            }
-
-        .secoff {
-            background-color: #0000008b;
-            margin-top: -17px;
-            margin-bottom: -17px;
-        }
-
-    div.picture {
-        padding: 2em;
+    ul.link li a, ul.download li a {
+        display: block;
+        padding: 0.5em;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--text-link);
+        transition: 0.5s ease;
     }
 
-        .img {
-            border-radius: 1em;
+        ul.download li a {
+            padding: 0.2em;
         }
 
-    div.notes {
-        text-align: left;
+    ul.link:hover li a, ul.download:hover li a {
+        color: var(--text-draft)
+    }
+
+    ul.link:hover li a:not(:hover), ul.download:hover li a:not(:hover) {
+        color: var(--text-link);
+        opacity: 0.5;
+        filter: blur(1px);
     }
 
 footer {
@@ -298,6 +283,9 @@ footer {
 }
 
 @media (min-width: 300px) {
+    ul.menu {
+        display: none;
+    }
     #welcomeimage {
         height: 40em;
     }
@@ -308,6 +296,9 @@ footer {
 }
 
 @media (min-width: 900px) {
+    ul.menu {
+        display: flex;
+    }
     #twobar { 
         grid-template-columns: repeat(2, 1fr); 
     }
