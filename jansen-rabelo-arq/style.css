@@ -32,7 +32,10 @@ html, body {
 
     body#homebody, body#aboutbody {
         background: var(--background-blue);
-        background-size: cover;
+    }
+
+    body#homebody {
+        height: 200em;
     }
 
 header {
