@@ -36,7 +36,7 @@ html, body {
     }
 
 header {
-    justify-content: space-between;
+    
     background-color: var(--background-white);
     box-shadow: 0px 10px 20px #000000;
     color: var(--text-main);
@@ -69,7 +69,6 @@ header {
         }
 
     nav {
-        display: flex;
         justify-content: right;
         align-items: center;
     }
@@ -282,12 +281,18 @@ footer {
     margin-top: 1em;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 320px) {
     ul.menu {
         display: none;
+        flex-direction: column;
     }
+
+    nav {
+        display: flex;
+    }
+
     #welcomeimage {
-        height: 40em;
+        height: 332px;
     }
 
     #twobar { 
@@ -295,10 +300,27 @@ footer {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1025px) {
     ul.menu {
         display: flex;
+        flex-direction: row;
     }
+
+    nav {
+        display: inline-flex;
+        float: right;
+        position: relative;
+        top: 20px;
+    }
+
+    span#burger {
+        display: none;
+    }
+
+    #welcomeimage {
+        height: 30em;
+    }
+
     #twobar { 
         grid-template-columns: repeat(2, 1fr); 
     }
