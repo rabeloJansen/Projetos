@@ -160,7 +160,6 @@ main {
     }
 
         div.resume > p {
-            width: min(70% - 2em, 80em);
             margin-inline: auto;
             flex: 1 0 auto;
             font-size: 1.4em;
@@ -298,6 +297,10 @@ footer {
     #twobar { 
         grid-template-columns: repeat(1, 1fr); 
     }
+
+    div.resume > p {
+        width: min(100% - 2em, 80em);
+    }
 }
 
 @media (min-width: 1025px) {
@@ -323,5 +326,9 @@ footer {
 
     #twobar { 
         grid-template-columns: repeat(2, 1fr); 
+    }
+
+    div.resume > p {
+        width: min(70% - 2em, 80em);
     }
 }
