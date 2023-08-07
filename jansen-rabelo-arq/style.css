@@ -32,10 +32,7 @@ html, body {
 
     body#homebody, body#aboutbody, body#librarybody {
         background: var(--background-blue);
-        background-size: cover;  
-    }
-
-    body#homebody, body#aboutbody, body#librarybody {
+        background-size: cover;
         height: auto;
     }
 
@@ -154,7 +151,7 @@ main {
         div#knowmore > a {
             color: var(--text-card);
             font-family: var(--font-draft);
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight: bold;
             text-decoration: none;           
         }
@@ -321,6 +318,10 @@ footer {
 
     span#burger {
         display: none;
+    }
+
+    body#homebody {
+        height: 100vh;
     }
 
     #welcomeimage {
