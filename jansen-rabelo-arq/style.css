@@ -76,7 +76,7 @@ header {
 
         span#burger {
             display: block;
-            cursor: pointer;
+            cursor: pointer;          
         }
 
             span#burger:hover {
