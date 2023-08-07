@@ -30,9 +30,13 @@ html, body {
     color: var(--text-other);
 }
 
-    body#homebody, body#aboutbody {
+    body#homebody, body#aboutbody, body#librarybody {
         background: var(--background-blue);
-        height: 200em;
+        background-size: cover;  
+    }
+
+    body#homebody, body#aboutbody, body#librarybody {
+        height: auto;
     }
 
 header {
@@ -147,10 +151,10 @@ main {
             justify-content: center;
         }
 
-        div.welcome > a {
+        div#knowmore > a {
             color: var(--text-card);
             font-family: var(--font-draft);
-            font-size: 1em;
+            font-size: 1rem;
             font-weight: bold;
             text-decoration: none;           
         }
@@ -180,7 +184,7 @@ main {
 
     #twobar {
         display: grid;
-        grid-gap: 1rem;
+        grid-gap: 15px;
     }
 
     .gallery {
@@ -271,7 +275,6 @@ ul.link, ul.download {
     }
 
 footer {
-    flex-shrink: 0;
     background-color: var(--background-white);
     box-shadow: 0px -10px 20px #000000;
     color: var(--text-main);    
