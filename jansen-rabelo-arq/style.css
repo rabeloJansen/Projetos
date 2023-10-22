@@ -22,9 +22,8 @@
 html, body {
     display: flex;
     flex-direction: column;
-    background: var(--background-white) url('package/images/background1.jpg') center center no-repeat fixed;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     text-align: center;
     font-family: var(--font-main);
     color: var(--text-other);
@@ -32,8 +31,10 @@ html, body {
 
     body#homebody, body#aboutbody, body#experiencebody, body#librarybody {
         background: var(--background-blue);
-        background-size: cover;
-        height: auto;
+    }
+    body#contactbody {
+        background: var(--background-white) url('package/images/background1.jpg') center center no-repeat fixed;
+        height: 100vh;
     }
 
 header {
@@ -139,8 +140,8 @@ main {
         }
 
         div#knowmore {
-            width: 8em;
-            height: 2.5em;
+            width: 10em;
+            height: 3em;
             border-radius: 7px;
             background-color: var(--text-draft);
             display: flex;
@@ -151,7 +152,7 @@ main {
         div#knowmore > a {
             color: var(--text-card);
             font-family: var(--font-draft);
-            font-size: 0.8rem;
+            font-size: 1rem;
             font-weight: bold;
             text-decoration: none;           
         }
