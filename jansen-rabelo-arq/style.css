@@ -168,13 +168,17 @@ main {
             text-align: left;
         }
 
+        div.resume > p.theme {
+            font-weight: bold;
+        }
+
             .secon {
                 background: var(--background-white);
                 box-shadow: 0px 0px 20px #000000;
                 color: var(--text-main);
             }
 
-                .secoff > p{
+                .secoff > p {
                     color: var(--text-other);
                     margin-top: -17px;
                     margin-bottom: -17px;
