@@ -149,6 +149,10 @@ main {
             justify-content: center;
         }
 
+        div.detail {
+            margin-inline: auto;
+        }
+
         div#knowmore > a {
             color: var(--text-card);
             font-family: var(--font-draft);
